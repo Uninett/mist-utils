@@ -50,7 +50,7 @@ api_token = vars_found.get('token')
 org_id = vars_found.get('org_id')
 
 # define URLs
-base_url = "https://api.mist.com"
+base_url = "https://api.eu.mist.com"
 sites_url = "{}/api/v1/orgs/{}/sites".format(base_url, org_id)
 org_wlans_url = "{}/api/v1/orgs/{}/wlans".format(base_url, org_id)
 inventory_url = "{}/api/v1/orgs/{}/inventory".format(base_url, org_id)

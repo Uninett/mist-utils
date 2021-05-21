@@ -36,7 +36,7 @@ api_token = vars_found.get('token')
 site_id = vars_found.get('site_id')
 
 # define URLs
-base_url = "https://api.mist.com"
+base_url = "https://api.eu.mist.com"
 clients_url = "{}/api/v1/sites/{}/clients/sessions/search?client_manufacture=Apple".format(base_url, site_id)
 
 def main():

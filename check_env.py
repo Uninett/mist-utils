@@ -6,7 +6,7 @@ before trying to execute any scripts
 Checks:
 
  1. DNS lookup
- 2. Network connectivity: can we get to api.mist.com?
+ 2. Network connectivity: can we get to api.eu.mist.com?
  3. Have we got an API key configured?
  4. Can we do a basic API call?
 
@@ -35,17 +35,17 @@ def check_env():
 
     print("Executing tests to check if our environment is \nsuitable to use Mist API:\n")
 
-    print("1. Checking our DNS is good (looking up api.mist.com)...")
+    print("1. Checking our DNS is good (looking up api.eu.mist.com)...")
 
     try:
-        socket.gethostbyname("api.mist.com")
+        socket.gethostbyname("api.eu.mist.com")
         print("   Result: OK.\n")
         passed_count += 1
     except:
         print("   Result: ** Fail ** (Check your DNS settings or network connectivity) .\n")
 
 
-    base_url = "https://api.mist.com"
+    base_url = "https://api.eu.mist.com"
     print("2. Checking we can get to Mist API URL ({})...".format(base_url))
 
     session = requests.Session()
@@ -72,7 +72,7 @@ def check_env():
                 'Authorization': 'Token {}'.format(api_token)
     }
 
-    url = "https://api.mist.com//api/v1/self"
+    url = "https://api.eu.mist.com/api/v1/self"
 
     try:
         response = session.get(url, headers=headers,  timeout=2)

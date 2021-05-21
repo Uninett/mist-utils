@@ -45,7 +45,7 @@ api_token = vars_found.get('token')
 site_id = args.site_id
 
 # define URLs
-base_url = "https://api.mist.com"
+base_url = "https://api.eu.mist.com"
 site_inventory_url = "{}/api/v1/sites/{}/devices".format(base_url, site_id)
 
 # define CSV file name

@@ -50,7 +50,7 @@ api_token = vars_found.get('token')
 token_id = args.token_id
 
 # define URLs
-base_url = "https://api.mist.com"
+base_url = "https://api.eu.mist.com"
 tokens_url = "{}/api/v1/self/apitokens".format(base_url)
 
 def main():

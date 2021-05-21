@@ -49,7 +49,7 @@ args = parser.parse_args()
 org_id = args.org_id
 
 # define URLs
-base_url = "https://api.mist.com"
+base_url = "https://api.eu.mist.com"
 org_stats_url = "{}/api/v1/orgs/{}/stats".format(base_url, org_id)
 
 def main():
